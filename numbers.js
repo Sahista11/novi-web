@@ -1,12 +1,15 @@
 const counters = document.querySelectorAll(".counter");
-const membersSection = document.querySelectorAll(".members-section");
+const membersSectionContent = document.querySelectorAll(
+  ".members-section-content"
+);
 var notDone = true;
 
 document.addEventListener("scroll", function () {
   const clientHeight = document.documentElement.clientHeight;
-  const membersSectionY = membersSection[0].getBoundingClientRect().y;
+  const membersSectionContentY =
+    membersSectionContent[0].getBoundingClientRect().y;
 
-  if (clientHeight > membersSectionY && notDone) {
+  if (clientHeight > membersSectionContentY && notDone) {
     counters.forEach((counter) => {
       counter.innerText = "0";
 
