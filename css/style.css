@@ -544,7 +544,7 @@ main a:not(.main-button) {
   display: grid;
   place-items: center;
   gap: 1rem;
-  padding-inline: 0.5rem;
+  padding-inline: 1rem;
 }
 
 .testimonials-container {
