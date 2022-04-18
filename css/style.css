@@ -1,3 +1,5 @@
+/* dodati padding na h1 i p u hero sectionu kako bi se smanjio layout shift */
+
 :root {
   /*font size */
   --fs-900: 9.375rem;
@@ -412,7 +414,7 @@ nav li a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
   gap: 2rem;
 }
 
@@ -427,6 +429,7 @@ h1,
 
 .main-button {
   display: inline-block;
+  max-width: fit-content;
   z-index: 1;
   padding: 0.625rem 1.25rem;
   position: relative;
@@ -476,7 +479,7 @@ h1,
   margin-bottom: 1rem;
 }
 
-main a:not(.main-button) {
+main a:not(.main-button, .article-title-a) {
   text-decoration: none;
   font-weight: 500;
   color: inherit;
@@ -489,8 +492,7 @@ main a:not(.main-button) {
   gap: 2rem;
   text-align: center;
   place-content: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
 }
 
 .members-section {
@@ -512,7 +514,7 @@ main a:not(.main-button) {
   place-content: center;
   gap: 3rem;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 @media (min-width: 32rem) {
@@ -530,12 +532,13 @@ main a:not(.main-button) {
   width: 100%;
   background-color: rgb(18, 18, 18);
   padding-block: 2rem;
-  color: rgb(220, 220, 220);
+  margin-bottom: -2px;
+  color: rgb(200, 200, 200);
 }
 
 .testimonials-section h2 {
   text-align: center;
-  color: rgb(235, 235, 235);
+  color: rgb(225, 225, 225);
 }
 
 .testimonials-section-content {
@@ -623,7 +626,7 @@ main a:not(.main-button) {
   text-align: center;
   border-radius: 1rem;
   margin-bottom: 2rem;
-  background-color: rgb(50, 50, 50);
+  background-color: rgb(46, 46, 46);
   padding: 0.5rem;
   padding-top: 4rem;
 }
@@ -639,12 +642,12 @@ main a:not(.main-button) {
 }
 
 .testimonial-img {
+  position: absolute;
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
   object-fit: cover;
   margin-top: 1rem;
-  position: absolute;
   top: -12px;
   border: 0.5rem solid rgb(18, 18, 18);
 }
@@ -655,4 +658,73 @@ main a:not(.main-button) {
 
 .with-us {
   color: rgb(160, 160, 160);
+}
+
+.featured-blog {
+  background-color: rgb(18, 18, 18);
+}
+
+.featured-blog h2 {
+  text-align: center;
+  color: rgb(225, 225, 225);
+}
+
+.featured-blog-content {
+  margin-top: 2rem;
+  padding-inline: 1rem;
+}
+
+.featured-article {
+  display: flex;
+  flex-direction: column;
+  margin-block: 1rem;
+}
+
+.featured-img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+@media (min-width: 64rem) {
+  .featured-article {
+    flex-direction: row-reverse;
+  }
+  .featured-img {
+    aspect-ratio: 1;
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.article-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: rgb(46, 46, 46);
+  color: rgb(200, 200, 200);
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.article-title-a {
+  text-decoration: none;
+}
+
+.article-text h3 {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+}
+
+.article-author-section {
+  display: flex;
+  align-items: center;
+}
+
+.article-author-section img {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.author-name {
+  font-weight: 500;
 }
