@@ -303,6 +303,8 @@ select {
 .primary-header {
   align-items: center;
   justify-content: space-between;
+  background-color: black;
+  margin-bottom: -2px;
 }
 
 .mobile-nav-toggle {
@@ -317,7 +319,7 @@ select {
 
 nav li a {
   text-decoration: none;
-  color: hsl(201, 100, 40);
+  color: rgb(0, 130, 202);
 }
 
 @media (max-width: 48em) {
@@ -329,7 +331,7 @@ nav li a {
     flex-direction: column;
     padding: min(20vh, 7rem) 2em;
     background: hsl(
-      0 0% 100% / 0.6
+      0 0% 100% / 0.15
     ); /* style na kraju, ne zaboraviti support za firefox */
     backdrop-filter: blur(
       1rem
@@ -353,13 +355,13 @@ nav li a {
     right: 2rem;
     border: none;
     background-color: transparent;
-    background-image: url("../img/list.svg");
+    background-image: url("../img/list-blue.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
-    background-image: url("../img/x-lg.svg");
+    background-image: url("../img/x-lg-blue.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -372,6 +374,7 @@ nav li a {
   background-size: cover;
   background-position: bottom;
   overflow: hidden;
+  margin-bottom: -2px;
 }
 /* center content on big screen */
 
@@ -409,7 +412,7 @@ nav li a {
 }
 
 .hero-section-content {
-  color: white;
+  color: rgb(240, 240, 240);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -473,13 +476,19 @@ h1,
 }
 
 .club-activities-section {
-  background-color: rgb(247, 248, 250);
-  color: black;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  /* background-color: rgb(247, 248, 250);
+  color: black; */
+  background-color: rgb(18, 18, 18);
+  color: rgb(200, 200, 200);
+  padding-block: 1rem;
+  margin-bottom: -2px;
 }
 
-main a:not(.main-button, .article-title-a) {
+.club-activities-section h2 {
+  color: rgb(220, 220, 220);
+}
+
+main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
   text-decoration: none;
   font-weight: 500;
   color: inherit;
@@ -497,10 +506,13 @@ main a:not(.main-button, .article-title-a) {
 
 .members-section {
   width: 100%;
-  background-color: rgb(0, 130, 202);
-  color: white;
+  /* background-color: rgb(0, 130, 202); 
+  color: white;*/
+  background-color: rgb(18, 18, 18);
+  color: rgb(0, 130, 202);
   padding-top: 1rem;
   padding-bottom: 2rem;
+  margin-bottom: -2px;
 }
 
 .members-section h2 {
@@ -538,7 +550,7 @@ main a:not(.main-button, .article-title-a) {
 
 .testimonials-section h2 {
   text-align: center;
-  color: rgb(225, 225, 225);
+  color: rgb(220, 220, 220);
 }
 
 .testimonials-section-content {
@@ -660,11 +672,13 @@ main a:not(.main-button, .article-title-a) {
   color: rgb(160, 160, 160);
 }
 
-.featured-blog {
+.featured-blog-section {
+  padding-block: 1rem;
   background-color: rgb(18, 18, 18);
+  margin-bottom: -2px;
 }
 
-.featured-blog h2 {
+.featured-blog-section h2 {
   text-align: center;
   color: rgb(225, 225, 225);
 }
@@ -727,4 +741,69 @@ main a:not(.main-button, .article-title-a) {
 
 .author-name {
   font-weight: 500;
+}
+
+.footer-section {
+  background-color: rgb(18, 18, 18);
+  color: rgb(200, 200, 200);
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.footer-section-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer-h {
+  color: rgb(220, 220, 220);
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.footer-list {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list-item-a {
+  text-decoration: none;
+  color: rgb(200, 200, 200);
+}
+
+.footer-list-item-a:visited {
+  color: rgb(200, 200, 200);
+}
+
+.media-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.media-items {
+  padding-inline: 0.75rem;
+}
+
+.footer-legal {
+  text-align: center;
+}
+
+hr {
+  border: none;
+  background-color: rgb(0, 130, 202);
+  height: 1px;
+}
+
+@media (min-width: 48rem) {
+  .footer-section-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-informations,
+  .footer-links,
+  .footer-media {
+    padding-inline: 1.5rem;
+  }
 }
