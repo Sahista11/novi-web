@@ -1,5 +1,3 @@
-/* dodati padding na h1 i p u hero sectionu kako bi se smanjio layout shift */
-
 :root {
   /*font size */
   --fs-900: 9.375rem;
@@ -19,6 +17,9 @@
   --bg: rgb(18, 18, 18);
   --accent: rgb(0, 130, 202);
   --accentcompl: rgb(178, 217, 240);
+  --normaltext: rgb(200, 200, 200);
+  --emphtext: rgb(220, 220, 220);
+  --strongtext: rgb(240, 240, 240);
 }
 
 @media (max-width: 32em) {
@@ -319,6 +320,25 @@ body::-webkit-scrollbar-thumb {
 
 /* Primary header + navigation */
 
+/* link for accesibility that skips to main content */
+
+.skip-nav-link {
+  position: absolute;
+  left: 20%;
+  color: black;
+  background-color: var(--emphtext);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  transform: translateY(-125%);
+  transition: transform 250ms ease-in;
+}
+
+.skip-nav-link:focus {
+  transform: translateY(0%);
+}
+
+/* centers header */
+
 @media (min-width: 89.9em) {
   .header-max-width-wrapper {
     width: 90rem;
@@ -460,7 +480,7 @@ nav li a {
 }
 
 .hero-section-content {
-  color: rgb(240, 240, 240);
+  color: var(--strongtext);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -527,13 +547,13 @@ h1,
 
 .club-activities-section {
   background-color: var(--bg);
-  color: rgb(200, 200, 200);
+  color: var(--normaltext);
   padding-block: 1rem;
   margin-bottom: -2px;
 }
 
 .club-activities-section h2 {
-  color: rgb(220, 220, 220);
+  color: var(--emphtext);
 }
 
 main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
@@ -566,7 +586,7 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
 .members-section h2 {
   text-align: center;
   padding-top: 1rem;
-  color: rgb(220, 220, 220);
+  color: var(--emphtext);
 }
 
 .members-section-content {
@@ -596,12 +616,12 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
   background-color: var(--bg);
   padding-block: 2rem;
   margin-bottom: -2px;
-  color: rgb(200, 200, 200);
+  color: var(--normaltext);
 }
 
 .testimonials-section h2 {
   text-align: center;
-  color: rgb(220, 220, 220);
+  color: var(--emphtext);
 }
 
 .testimonials-section-content {
@@ -666,7 +686,7 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
 
 /* Firefox "support" */
 .testimonials-container {
-  scrollbar-color: var(--accent) var(--accentcompl);
+  scrollbar-color: var(--accentcompl) var(--accent);
   scrollbar-width: auto;
 }
 
@@ -765,7 +785,7 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
   justify-content: center;
   gap: 1.5rem;
   background-color: rgb(46, 46, 46);
-  color: rgb(200, 200, 200);
+  color: var(--normaltext);
   padding: 2rem 1.5rem 2rem 1.5rem;
 }
 
@@ -774,7 +794,7 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
 }
 
 .article-text h3 {
-  color: rgb(220, 220, 220);
+  color: var(--emphtext);
   text-decoration: none;
 }
 
@@ -796,7 +816,7 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
 
 .footer-section {
   background-color: var(--bg);
-  color: rgb(200, 200, 200);
+  color: var(--normaltext);
   padding: 2rem 1.5rem 2rem 1.5rem;
 }
 
@@ -809,7 +829,7 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
 }
 
 .footer-h {
-  color: rgb(220, 220, 220);
+  color: var(--emphtext);
   margin-bottom: 0.75rem;
   font-weight: 500;
 }
@@ -821,11 +841,11 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
 
 .footer-list-item-a {
   text-decoration: none;
-  color: rgb(200, 200, 200);
+  color: var(--normaltext);
 }
 
 .footer-list-item-a:visited {
-  color: rgb(200, 200, 200);
+  color: var(--normaltext);
 }
 
 .media-container {
