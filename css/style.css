@@ -14,6 +14,9 @@
   /* font family */
   --ff-sans: "Fira Sans", sans-serif;
   --ff-sans-cond: "Fira Sans Condensed", sans-serif;
+
+  /* colors */
+  --bg: rgb(18, 18, 18);
 }
 
 @media (max-width: 32em) {
@@ -521,7 +524,7 @@ h1,
 /* club activities section */
 
 .club-activities-section {
-  background-color: rgb(18, 18, 18);
+  background-color: var(--bg);
   color: rgb(200, 200, 200);
   padding-block: 1rem;
   margin-bottom: -2px;
@@ -551,7 +554,7 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
 
 .members-section {
   width: 100%;
-  background-color: rgb(18, 18, 18);
+  background-color: var(--bg);
   color: rgb(0, 130, 202);
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -588,7 +591,7 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
 
 .testimonials-section {
   width: 100%;
-  background-color: rgb(18, 18, 18);
+  background-color: var(--bg);
   padding-block: 2rem;
   margin-bottom: -2px;
   color: rgb(200, 200, 200);
@@ -703,7 +706,7 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
   object-fit: cover;
   margin-top: 1rem;
   top: -12px;
-  border: 0.5rem solid rgb(18, 18, 18);
+  border: 0.5rem solid var(--bg);
 }
 
 .testimonial > figcaption {
@@ -718,7 +721,7 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
 
 .featured-blog-section {
   padding-block: 1rem;
-  background-color: rgb(18, 18, 18);
+  background-color: var(--bg);
   margin-bottom: -2px;
 }
 
@@ -790,7 +793,7 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
 /* footer section */
 
 .footer-section {
-  background-color: rgb(18, 18, 18);
+  background-color: var(--bg);
   color: rgb(200, 200, 200);
   padding: 2rem 1.5rem 2rem 1.5rem;
 }
