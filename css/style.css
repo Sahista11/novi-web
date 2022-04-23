@@ -314,6 +314,17 @@ body::-webkit-scrollbar-thumb {
 
 /* Primary header + navigation */
 
+@media (min-width: 89.9em) {
+  .header-max-width-wrapper {
+    width: 90rem;
+    margin: auto;
+  }
+  .header-center {
+    width: 100%;
+    background-color: black;
+  }
+}
+
 .logo {
   margin-left: 1rem;
 }
