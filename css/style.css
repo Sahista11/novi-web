@@ -15,6 +15,7 @@
 
   /* colors */
   --bg: rgb(18, 18, 18);
+  --element: rgb(46, 46, 46);
   --accent: rgb(0, 130, 202);
   --accentcompl: rgb(178, 217, 240);
   --normaltext: rgb(200, 200, 200);
@@ -585,7 +586,7 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
 
 .members-section h2 {
   text-align: center;
-  padding-top: 1rem;
+  padding: 1rem 1rem 0 1rem;
   color: var(--emphtext);
 }
 
@@ -710,7 +711,7 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
   text-align: center;
   border-radius: 1rem;
   margin-bottom: 2rem;
-  background-color: rgb(46, 46, 46);
+  background-color: var(--element);
   padding: 0.5rem;
   padding-top: 4rem;
 }
@@ -749,7 +750,7 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
 
 .featured-blog-section h2 {
   text-align: center;
-  color: rgb(225, 225, 225);
+  color: var(--emphtext);
 }
 
 .featured-blog-content {
@@ -784,7 +785,7 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
-  background-color: rgb(46, 46, 46);
+  background-color: var(--element);
   color: var(--normaltext);
   padding: 2rem 1.5rem 2rem 1.5rem;
 }
