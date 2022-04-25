@@ -81,11 +81,33 @@
                   >O nama</a
                 >
               </li>
-              <li>
+              <div class="dropdown">
+                <button class="dropdown-button ff-sans-cond uppercase letter-spacing-3">Treninzi</button>
+                <div class="dropdown-content">
+                  <nav>
+                    <ul class="dropdown-navigation">
+                      <li>
+                        <a href="#" class="ff-sans-cond uppercase letter-spacing-3">Treninzi za djecu</a>
+                      </li>
+                      <li>
+                        <a href="#" class="ff-sans-cond uppercase letter-spacing-3">Treninzi za odrasle</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <li class="small-screen-only">
                 <a
-                  class="ff-sans-cond uppercase letter-spacing-3"
+                  class=" ff-sans-cond uppercase letter-spacing-3"
                   href="Treninzi.html"
-                  >Treninzi</a
+                  >Treninzi za djecu</a
+                >
+              </li>
+              <li class="small-screen-only">
+                <a
+                  class=" ff-sans-cond uppercase letter-spacing-3"
+                  href="Treninzi.html"
+                  >Treninzi za odrasle</a
                 >
               </li>
               <li>
@@ -111,7 +133,9 @@
       <div class="section">
         <div class="max-width-wrapper">
           <div class="content-holder">
-            <h1>O šah klubu Končar</h1>
+            <div class="title-container">
+              <h1 class="fs-700 ff-sans">O Šah klubu Končar</h1>
+            </div>
             <hr>
 
             <section aria-label="club-today" class="club-today">
@@ -147,23 +171,25 @@
                   <div class="mvv-container">
                     <img src="img/handshake-koncar-blue.svg" height="60" width="60" alt=""></img>
                     <h3 class="fs-600">Vrijednosti</h3>
-                    <p> Članovi = klub. Veže nas strast prema šahu, dobrobit svih članova, otvorenost prema novome i organski rast kluba. </p>
+                    <p> Članovi = klub. Veže nas strast prema šahu, dobrobit svih članova, otvorenost prema novome i razvoj kluba. </p>
                   </div>
                 </div>
               </div>
             </section>
-            <section aria-label="history-title"></section>
-              <div class="">
-                <h2 id="history-title" class="fs-700">Povijest kluba</h2>
-                <p>
-                  Šah klub Končar osnovan je 1945. ,te službeno registriran 25. siječnja 1949. godine. Kroz svoju bogatu povijest osvojio je brojna odličja s raznih natjecanja poput prvih mjesta na Radničkim prvenstvima Jugoslavije, Kupovima maršala Tita, Šahovskim festivalima i mnogim drugim. Osim bogate natjecateljske povijesti, krasi ga organizacija brojnih šahovskih manifestacijama na kojima su prisustvovali hrvatski i svjetski šahovski prvaci <a href="https://en.wikipedia.org/wiki/Vasily_Smyslov" target="_blank" rel="noopener noreferrer">Vasily Smyslov</a> i <a href="https://en.wikipedia.org/wiki/Mikhail_Tal" target="_blank" rel="noopener noreferrer">Mikhail Tal</a>.
-                    <br>
-                  Klub ima dugu povijest treniranja mlađih naraštaja i suradnje sa odgojno-obrazovnim institucijama te društvenom zajednicom. Brojni šahovski majstori- osvajači kadetskih i juniorskih prvenstva, liga i kupova potekli su upravo iz Šah kluba Končar. Danas, ti isti majstori su ugledni akademski građani i svoje znanje šire novim generacijama. Takav ishod nas ni ne čudi jer je kvalitetan rad s mladima oduvijek bio temelj kluba. Cilj takvog načina rada je stvaranje odgovorne i društveno aktivne osobe koja doprinosi zajednici.
-                  
-                  
-                </p>
-                <img src="/img/klupske-prostorije.jpg" alt="" />
+            <section aria-label="club-history" class="club-history">
+              <div class="club-history-container">
+                <div class="club-history-text">
+                  <h2 id="club-history" class="fs-700">Povijest kluba</h2>
+                  <p> Šah klub Končar osnovan je 1945., a službeno registriran 25. siječnja 1949. godine. Kroz svoju bogatu povijest osvojio je brojna odličja s raznih natjecanja poput prvih mjesta na Radničkim prvenstvima Jugoslavije, Kupovima maršala Tita, Šahovskim festivalima i mnogim drugim. Osim bogate natjecateljske povijesti, krasi ga organizacija brojnih šahovskih manifestacijama na kojima su prisustvovali hrvatski i svjetski šahovski prvaci Vasily Smyslov i Mikhail Tal.</p>
+
+                  <p> Također, klub ima dugu povijest treniranja mlađih naraštaja i suradnja sa odgojno-obrazovnim institucijama te društvenom zajednicom. Brojni šahovski majstori - osvajači kadetskih i juniorskih prvenstva, liga i kupova potekli su upravo iz Šah kluba Končar. Danas, ti isti majstori su ugledni akademski građani i svoje znanje šire novim generacijama. Takav ishod nas ni ne čudi jer je kvalitetan rad s mladima oduvijek bio temelj kluba. Cilj takvog načina rada je stvaranje odgovorne i društveno aktivne osobe koja doprinosi zajednici.</p>
+
+                </div>
+                <div class="club-history-picture-container">
+                  <img src="/img/prostorije-kluba-stara.jpg" alt="" />
+                </div>
               </div>
+            </section>
             
           </div>
         </div>
@@ -174,6 +200,7 @@
         class="footer-section section"
         aria-label="Informacije i korisni linkovi"
       >
+      
         <div class="max-width-wrapper">
           <div class="footer-section-content">
             <div class="footer-informations">

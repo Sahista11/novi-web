@@ -351,6 +351,16 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+@media (min-width: 89.9rem) {
+  .section {
+    display: flex;
+    justify-content: center;
+  }
+  .max-width-wrapper {
+    width: 90rem;
+  }
+}
+
 .logo {
   margin-left: 1rem;
 }
@@ -364,6 +374,12 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   background-color: black;
   margin-bottom: -2px;
+}
+/* disables dropdown for small screens */
+@media (max-width: 48rem) {
+  .dropdown {
+    display: none;
+  }
 }
 
 .mobile-nav-toggle {
@@ -424,6 +440,47 @@ nav li a {
   .primary-navigation {
     margin-right: 2rem;
     --gap: 2rem;
+  }
+  /* dropdown for big screens */
+  /* disables links only available on small screens */
+  .small-screen-only {
+    display: none;
+  }
+  .dropdown-button {
+    padding: 0;
+    padding-right: 1.25rem;
+    color: var(--accent);
+    border: none;
+    background: none;
+    background-image: url(/img/dropdown.svg);
+    background-repeat: no-repeat;
+    background-position: 87px 1px;
+  }
+
+  .dropdown-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: -2rem;
+    margin-left: -1rem;
+    min-width: 13.5rem;
+    padding: 2rem;
+    background-color: black;
+    top: 87px;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding-top: 1rem;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 }
 

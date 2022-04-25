@@ -382,6 +382,12 @@ body::-webkit-scrollbar-thumb {
   background-color: black;
   margin-bottom: -2px;
 }
+/* disables dropdown for small screens */
+@media (max-width: 48rem) {
+  .dropdown {
+    display: none;
+  }
+}
 
 .mobile-nav-toggle {
   display: none;
@@ -441,6 +447,47 @@ nav li a {
   .primary-navigation {
     margin-right: 2rem;
     --gap: 2rem;
+  }
+  /* dropdown for big screens */
+  /* disables links only available on small screens */
+  .small-screen-only {
+    display: none;
+  }
+  .dropdown-button {
+    padding: 0;
+    padding-right: 1.25rem;
+    color: var(--accent);
+    border: none;
+    background: none;
+    background-image: url(/img/dropdown.svg);
+    background-repeat: no-repeat;
+    background-position: 87px 1px;
+  }
+
+  .dropdown-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: -2rem;
+    margin-left: -1rem;
+    min-width: 13.5rem;
+    padding: 2rem;
+    background-color: black;
+    top: 87px;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding-top: 1rem;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 }
 
@@ -575,28 +622,35 @@ hr {
 }
 */
 
+.title-container {
+  padding: 1rem;
+}
 h1 {
   text-align: center;
   margin-top: 1rem;
 }
 
+h1,
 h2,
 h3 {
   color: var(--emphtext);
 }
 
-.club-today {
+.club-today,
+.club-history {
   margin-top: 2rem;
 }
 
-.club-today-container {
+.club-today-container,
+.club-history-container {
   display: flex;
   flex-direction: column-reverse;
   gap: 2rem;
   padding-inline: 1rem;
 }
 
-.club-today-text {
+.club-today-text,
+.club-history-text {
   text-align: center;
 }
 
@@ -611,15 +665,31 @@ h3 {
 
 .club-today-picture-container {
   margin-left: auto;
+  width: 100%;
+}
+
+.club-history-picture-container {
+  margin-right: auto;
+  width: 100%;
 }
 
 @media (min-width: 61rem) {
-  .club-today-container {
-    flex-direction: row;
+  .club-today-container,
+  .club-history-container {
     align-items: center;
     gap: 3rem;
   }
-  .club-today-text {
+
+  .club-today-container {
+    flex-direction: row;
+  }
+
+  .club-history-container {
+    flex-direction: row-reverse;
+  }
+
+  .club-today-text,
+  .club-history-text {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -652,12 +722,17 @@ h3 {
 .mvv-content {
   display: grid;
   place-items: center;
+  background-color: rgb(30, 30, 30);
+  padding: 2rem;
+  margin-inline: 0.5rem;
   gap: 1rem;
+  border-radius: 10px;
 }
 
 @media (min-width: 48rem) {
   .mvv-content {
     grid-template-columns: repeat(3, 1fr);
+    margin-inline: 1.5rem;
   }
 }
 
@@ -673,4 +748,7 @@ h3 {
   background-color: var(--element);
   padding: 1rem;
   border-radius: 10px;
+}
+
+@media (min-width: 48rem) {
 }
