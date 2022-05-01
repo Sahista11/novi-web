@@ -319,6 +319,17 @@ body::-webkit-scrollbar-thumb {
   scrollbar-width: thin;
 }
 
+/* sticks footer to the bottom of the screen */
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 /* Primary header + navigation */
 
 /* link for accesibility that skips to main content */

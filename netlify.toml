@@ -1,0 +1,11 @@
+Name: peroperic
+Value: peroperic
+
+[[plugins]]
+  package = "netlify-plugin-cloudinary"
+
+[[plugins]]
+  package = "netlify-plugin-cloudinary"
+
+[plugins.inputs]
+  cloudName = "<peroperic>"
