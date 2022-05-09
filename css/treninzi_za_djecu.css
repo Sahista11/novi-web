@@ -628,12 +628,12 @@ h3 {
   color: var(--emphtext);
 }
 
-.chess-training-kids-wrapper {
+.chess-training-wrapper {
   display: flex;
   justify-content: center;
 }
 
-.chess-training-kids-container {
+.chess-training-container {
   display: grid;
   place-items: center;
   gap: 2rem;
@@ -641,7 +641,7 @@ h3 {
   padding-inline: 1rem;
 }
 
-.chess-training-kids-container p {
+.chess-training-container p {
   margin-top: 1rem;
 }
 
@@ -664,6 +664,7 @@ h3 {
 details {
   border: 2px solid var(--normaltext);
   padding: 0.5rem;
+  border-radius: 8px;
 }
 
 summary {
@@ -684,7 +685,7 @@ details[open] summary {
   h1 {
     margin-top: 2rem;
   }
-  .chess-training-kids-container,
+  .chess-training-container,
   .faq-content {
     padding-inline: 2rem;
   }
@@ -700,4 +701,9 @@ details[open] summary {
   .faq-content {
     width: auto;
   }
+}
+
+details:hover,
+summary:hover {
+  cursor: pointer;
 }
