@@ -550,9 +550,10 @@ nav li a {
 /* footer section */
 
 .footer-section {
-  background-color: var(--bg);
+  background-color: black;
+  margin-top: 2rem;
   color: var(--normaltext);
-  padding: 2rem 1.5rem 2rem 1.5rem;
+  padding: 2rem 1rem 2rem 1rem;
 }
 
 .footer-section-content {
