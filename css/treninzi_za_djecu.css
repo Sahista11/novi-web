@@ -91,7 +91,7 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-main a:not(.footer-list-item-a, .media-items, .main-button) {
+main a:not(.footer-list-item-a, .media-items, .main-button, .article-title-a) {
   text-decoration: none;
   font-weight: 500;
   color: inherit;
