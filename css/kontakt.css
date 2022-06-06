@@ -672,7 +672,7 @@ form textarea:focus-within {
 
 form button {
   background: linear-gradient(135deg, var(--accent), var(--accentcompl));
-  border: none;
+  border: 1px solid var(--accent);
   text-transform: uppercase;
 }
 
