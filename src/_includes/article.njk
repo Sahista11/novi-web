@@ -1,0 +1,42 @@
+---
+layout: "base.njk"
+---
+
+<head>
+  <link rel="stylesheet" href="/css/article.css">
+</head>
+
+
+    <main aria-labelledby="chess-article-title" id="main-content"></main>
+        <div class="section">
+            <div class="max-width-wrapper">
+            <div class="article-container">
+                <article>
+            
+                    <div class="title-container">
+                      <h1 id="chess-article-title" class="fs-700 ff-sans"> {{ title }} </h1>
+                    </div>
+
+                    <div class="article-author-section">
+                        <img
+                          src="{{ authorImg }}"
+                          width="48"
+                          height="48"
+                          draggable="false"
+                          alt=" {{ authorImgAlt }} "
+                        />
+                        <p>
+                          Piše <span class="author-name"> {{ author }} </span>,
+                          <time datetime="2022-02-29"> {{ date | postDate }} </time>
+                        </p>
+                    </div>
+
+                        <img src=" {{ featuredImg }} " alt="{{ featuredImgAlt }}">
+
+                 {{ content | safe }}
+
+                </article>
+            </div>
+            </div>
+        </div>
+    </main>

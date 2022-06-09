@@ -1,0 +1,39 @@
+---
+title: ' Blog | Šah klub Končar'
+layout: 'base.njk'
+---
+
+  
+  <head>
+    <link rel="stylesheet" href="/css/blog.css" />
+  </head>
+    
+    <!--Main-->
+    <main aria-labelledby="blog-title" id="main-content">
+      <div class="section">
+        <div class="max-width-wrapper">
+          <div class="title-container">
+            <h1 id="blog-title" class="fs-700 ff-sans">Blog</h1>
+            <hr>
+          </div>
+                <!--Featured-blog-section-->
+      <section
+      id="featured-blog"
+      class="featured-blog-section section"
+      aria-labelledby="featured-title"
+    >
+      <div class="max-width-wrapper">
+        
+
+          {%- for post in collections.post | reverse -%}
+
+              {% include 'article-snippet.njk' %}
+
+          {%- endfor -%}
+
+      
+        </div>
+      </div>
+    </section>
+      </div>
+    </main>
