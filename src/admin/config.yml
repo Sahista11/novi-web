@@ -1,7 +1,6 @@
 backend:
   name: git-gateway
   branch: main
-publish_mode: editorial_workflow
 media_folder: "public/img"
 public_folder: "/img"
 collections:
@@ -11,13 +10,38 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-      - { label: "Author Img", name: "authorImg", widget: "image" }
-      - { label: "Alt Author Img", name: "altAuthorImg", widget: "string" }
-      - { label: "Featured Img", name: "featuredImg", widget: "image" }
-      - { label: "Alt Featured Img", name: "altFeaturedImg", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Naslov", name: "title", widget: "string" }
+      - {
+          label: "Sažetak (minimalno 40 riječi)",
+          name: "description",
+          widget: "string",
+        }
+      - { label: "Autor", name: "author", widget: "string" }
+      - { label: "Datum objave", name: "date", widget: "datetime" }
+      - {
+          label: "Tags (svakako ostavi post. Dodaj ,featured ako zeliš da article dode na naslovnicu",
+          name: "tags",
+          widget: "list",
+          default: ["post"],
+        }
+      - { label: "Tvoja slika", name: "authorImg", widget: "image" }
+      - {
+          label: "alt text - kratki opis slike",
+          name: "altAuthorImg",
+          widget: "string",
+        }
+      - {
+          label: "Featured Img - glavna slika",
+          name: "featuredImg",
+          widget: "image",
+        }
+      - {
+          label: "Alt text za featured img - kratki opis slike",
+          name: "altFeaturedImg",
+          widget: "string",
+        }
+      - {
+          label: "Tijelo posta - ovdje pišeš šta si zapravo htio reć",
+          name: "body",
+          widget: "markdown",
+        }
