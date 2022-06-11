@@ -391,8 +391,8 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: black;
-  margin-bottom: -2px;
 }
+
 /* disables dropdown for small screens */
 @media (max-width: 48rem) {
   .dropdown {
@@ -676,12 +676,17 @@ form button {
   text-transform: uppercase;
 }
 
+.map-title {
+  margin-bottom: 1.5rem;
+}
+
 .map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
 }
+
 .map-responsive iframe {
   left: 0;
   top: 0;

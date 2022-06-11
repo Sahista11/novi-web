@@ -391,8 +391,8 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: black;
-  margin-bottom: -2px;
 }
+
 /* disables dropdown for small screens */
 @media (max-width: 48rem) {
   .dropdown {

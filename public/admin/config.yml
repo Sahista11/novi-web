@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/img"
+public_folder: "/img"
+collections:
+  - name: "Post"
+    label: "Post"
+    folder: /src/blog
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Naslov", name: "title", widget: "string" }
+      - {
+          label: "Sažetak (minimalno 40 riječi)",
+          name: "description",
+          widget: "string",
+        }
+      - { label: "Autor", name: "author", widget: "string" }
+      - { label: "Datum objave", name: "date", widget: "datetime" }
+      - {
+          label: "Tags (svakako ostavi post. Dodaj ,featured ako zeliš da article dode na naslovnicu",
+          name: "tags",
+          widget: "list",
+          default: ["post"],
+        }
+      - { label: "Tvoja slika", name: "authorImg", widget: "image" }
+      - {
+          label: "alt text - kratki opis slike",
+          name: "altAuthorImg",
+          widget: "string",
+        }
+      - {
+          label: "Featured Img - glavna slika",
+          name: "featuredImg",
+          widget: "image",
+        }
+      - {
+          label: "Alt text za featured img - kratki opis slike",
+          name: "altFeaturedImg",
+          widget: "string",
+        }
+      - {
+          label: "Tijelo posta - ovdje pišeš šta si zapravo htio reć",
+          name: "body",
+          widget: "markdown",
+        }

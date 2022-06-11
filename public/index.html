@@ -5,17 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <style>
+      body {
+        background-color: rgb(18, 18, 18);
+      }
+    </style>
+
 
     <meta name="robots" content="noindex">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500&family=Fira+Sans:wght@300;400;500&display=swap"
           rel="stylesheet"/>
     
 
     <title>Šah klub Končar</title>
+
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 
     <script src="/nav.js" defer></script>
   </head>
@@ -27,7 +36,7 @@
     <header class="primary-header flex">
       <a class="skip-nav-link" href="#main-content"> Preskoči navigaciju </a>
       <div>
-        <a href="index.html">
+        <a href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="logo-svg logo"
@@ -138,7 +147,8 @@
 
     
 <head>
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="preload stylesheet" href="/css/style.css" as="style" />
+  <link rel="prefetch" href="/kontakt/" />
 </head>
 
 <!--Main-content-->
@@ -163,7 +173,7 @@
               <span class="text-emphasize">trenirati</span> šah. Započni svoje
               šahovsko putovanje!
             </p>
-            <a class="main-button" href="#"
+            <a class="main-button" href="/kontakt/"
               >Pridruži nam se
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -192,8 +202,8 @@
       <div class="club-activities-section-content">
         <h2 id="club-activities-title" class="fs-700">Aktivnosti u klubu</h2>
         <p class="fs-500 max-width-50ch">
-          Kod nas možeš pronaći <a href="#">treninge za djecu</a>,
-          <a href="#">treninge za odrasle</a>, dječje turnire, turnire za
+          Kod nas možeš pronaći <a href="/treninzi_za_djecu/">treninge za djecu</a>,
+          <a href="/treninzi_za_odrasle/">treninge za odrasle</a>, dječje turnire, turnire za
           rekreativne igrače i turnire za natjecatelje. Tražiš li mjesto za
           odigrati nekoliko partija u opuštenoj atmosferi ili šahovski napredak,
           pronaći ćeš <span class="text-emphasize">svoje mjesto</span> u Šah
@@ -557,22 +567,22 @@
         <ul class="footer-list" role="list">
           <h2 class="footer-h fs-500">Brzi linkovi</h2>
           <li class="footer-list-item">
-            <a href="#" class="footer-list-item-a">Naslovnica</a>
+            <a href="/" class="footer-list-item-a">Naslovnica</a>
           </li>
           <li class="footer-list-item">
-            <a href="#" class="footer-list-item-a">O nama</a>
+            <a href="/o_nama/" class="footer-list-item-a">O nama</a>
           </li>
           <li class="footer-list-item">
-            <a href="#" class="footer-list-item-a">Treninzi za mlade</a>
+            <a href="/treninzi_za_djecu/" class="footer-list-item-a">Treninzi za mlade</a>
           </li>
           <li class="footer-list-item">
-            <a href="#" class="footer-list-item-a">Treninzi za odrasle</a>
+            <a href="/treninzi_za_odrasle/" class="footer-list-item-a">Treninzi za odrasle</a>
           </li>
           <li class="footer-list-item">
-            <a href="#" class="footer-list-item-a">Blog</a>
+            <a href="/blog/" class="footer-list-item-a">Blog</a>
           </li>
           <li class="footer-list-item">
-            <a href="#" class="footer-list-item-a">Kontakt</a>
+            <a href="/kontakt/" class="footer-list-item-a">Kontakt</a>
           </li>
           <li class="footer-list-item">
             <a href="#" class="footer-list-item-a">Sponzori</a>
@@ -582,10 +592,10 @@
       <div class="footer-media">
         <h2 class="footer-h fs-500">Društvene mreže</h2>
         <div class="media-container">
-          <a href="#" class="media-items">
+          <a href="https://www.facebook.com/SahklubKoncar" target="_blank" class="media-items">
             <img src="/img/jerwwjwqj.png" width="50" height="50" alt="" />
           </a>
-          <a href="#" class="media-items">
+          <a href="https://www.instagram.com/sahklubkoncar/" target="_blank" class="media-items">
             <img src="/img/juwerhuew.png" width="50" height="50" alt="" />
           </a>
         </div>
@@ -595,6 +605,18 @@
     <div class="footer-legal">&copy; 2022 | Šah klub Končar</div>
   </div>
 </footer>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
 
   </body>
 <html>

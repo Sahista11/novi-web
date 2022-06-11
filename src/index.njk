@@ -4,7 +4,8 @@ layout: 'base.njk'
 ---
 
 <head>
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="preload stylesheet" href="/css/style.css" as="style" />
+  <link rel="prefetch" href="/kontakt/" />
 </head>
 
 <!--Main-content-->
@@ -29,7 +30,7 @@ layout: 'base.njk'
               <span class="text-emphasize">trenirati</span> šah. Započni svoje
               šahovsko putovanje!
             </p>
-            <a class="main-button" href="#"
+            <a class="main-button" href="/kontakt/"
               >Pridruži nam se
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -58,8 +59,8 @@ layout: 'base.njk'
       <div class="club-activities-section-content">
         <h2 id="club-activities-title" class="fs-700">Aktivnosti u klubu</h2>
         <p class="fs-500 max-width-50ch">
-          Kod nas možeš pronaći <a href="#">treninge za djecu</a>,
-          <a href="#">treninge za odrasle</a>, dječje turnire, turnire za
+          Kod nas možeš pronaći <a href="/treninzi_za_djecu/">treninge za djecu</a>,
+          <a href="/treninzi_za_odrasle/">treninge za odrasle</a>, dječje turnire, turnire za
           rekreativne igrače i turnire za natjecatelje. Tražiš li mjesto za
           odigrati nekoliko partija u opuštenoj atmosferi ili šahovski napredak,
           pronaći ćeš <span class="text-emphasize">svoje mjesto</span> u Šah
