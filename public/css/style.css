@@ -155,8 +155,6 @@ select {
   border: 0;
 }
 
-/* COLORS 
-
 .bg-100 {
   background-color: rgb(0, 130, 202);
 }
@@ -217,7 +215,8 @@ select {
 }
 .text-10 {
   color: rgb(229, 242, 250);
-} */
+}
+*/
 
 /* UTILITY */
 
@@ -501,7 +500,7 @@ nav li a {
   max-width: 90rem;
   width: 100%;
   background-color: black;
-  background-image: url(../img/hero-background.jpg);
+  background-image: url(../img/hero-background.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
