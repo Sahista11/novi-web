@@ -1,9 +1,10 @@
 ---
 title: Turniri za rekreativce
-description: "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
-  lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
-  lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
-  lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+description: S našim serijalom rekreativnih turnira želimo prosječnom šahistu
+  približiti turnirsku atmosferu. Našim članovima i svim zainteresiranima,
+  omogućujemo da iskuse kako je to odigrati "pravi" turnir u dobrom društvu.
+  Vaši protivnici su amateri kao i vi, tako da očekujte ujednačene i zanimljive
+  partije.
 author: Bruno Pavčević
 date: 2022-03-13T00:16:47.850Z
 tags:
