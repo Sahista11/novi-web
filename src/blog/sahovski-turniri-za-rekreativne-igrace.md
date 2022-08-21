@@ -6,7 +6,7 @@ description: S našim serijalom rekreativnih turnira želimo prosječnom šahist
   Vaši protivnici su amateri kao i vi, tako da očekujte ujednačene i zanimljive
   partije.
 author: Bruno Pavčević
-date: 2022-03-13T00:16:47.850Z
+date: 2022-01-10T00:16:47.850Z
 tags:
   - post
   - featured
