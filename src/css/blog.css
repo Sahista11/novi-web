@@ -651,6 +651,11 @@ h3 {
   object-fit: cover;
 }
 
+#contain {
+  aspect-ratio: 16/9;
+  object-fit: contain;
+}
+
 @media (min-width: 64rem) {
   .featured-article {
     flex-direction: row-reverse;
@@ -659,6 +664,7 @@ h3 {
     aspect-ratio: 1;
     width: 500px;
     height: 500px;
+    object-fit: cover;
   }
 }
 

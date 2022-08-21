@@ -21,9 +21,10 @@
                 />
                 <p>
                   Piše <span class="author-name">{{ post.data.author }}</span>,
-                  <time datetime="2022-02-29">{{ post.data.date | postDate }}</time>
+                  <time datetime="{{ post.data.date | postDate }}">{{ post.data.date | postDate }}</time>
                 </p>
               </div>
+              
               <p>
                 {{ post.data.description }}
               </p>
