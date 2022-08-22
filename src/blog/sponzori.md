@@ -9,7 +9,7 @@ date: 2022-02-08T22:44:21.454Z
 tags:
   - post
   - featured
-authorImg: /img/img_20220729_234956_933-_1_.webp
+authorImg: /img/autor_bruno.webp
 altAuthorImg: Autor članka - Bruno Pavčević
 featuredImg: /img/Koncar_logo.svg
 altFeaturedImg: Logo našeg sponzora - Končar elektroindustrija d.d.

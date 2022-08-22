@@ -10,9 +10,9 @@ date: 2022-03-13T00:16:47.850Z
 tags:
   - post
   - featured
-authorImg: /img/img_20220729_234956_933-_1_.webp
+authorImg: /img/autor_bruno.webp
 altAuthorImg: Autor članka - Bruno Pavčević
-featuredImg: /img/klupske-prostorije-enhanced.jpg
+featuredImg: /img/klupske-prostorije_jkuoci_c_scale,w_960.webp
 altFeaturedImg: Prostorije Šah kluba Končar
 ---
 

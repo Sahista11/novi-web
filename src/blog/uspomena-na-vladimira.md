@@ -8,7 +8,7 @@ author: Bruno Pavčević
 date: 2021-01-27T23:00:00.000Z
 tags:
   - post
-authorImg: /img/img_20220729_234956_933-_1_.webp
+authorImg: /img/autor_bruno.webp
 altAuthorImg: Autor članka - Bruno Pavčević
 featuredImg: /img/vladimir_serbec.webp
 altFeaturedImg: Gospodin Vladimir Šerbec
