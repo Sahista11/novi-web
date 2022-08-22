@@ -123,6 +123,10 @@ select {
   }
 }
 
+a:visited {
+  color: var(--normaltext);
+}
+
 /* RESET */
 
 /* UTILITY */
