@@ -88,13 +88,16 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--normaltext);
+  border-bottom: 2px solid;
 }
 
 main a:not(.footer-list-item-a, .media-items, .main-button, .article-title-a) {
   text-decoration: none;
   font-weight: 500;
-  color: inherit;
+  color: var(--normaltext);
   border-bottom: 2px solid;
 }
 
