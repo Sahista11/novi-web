@@ -722,3 +722,8 @@ h3 {
   padding: 1rem;
   border-radius: 10px;
 }
+
+.footer-list-item,
+.footer-list-item-a {
+  padding-bottom: 0.375rem;
+}

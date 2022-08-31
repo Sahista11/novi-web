@@ -692,3 +692,8 @@ form button {
   width: 100%;
   position: absolute;
 }
+
+.footer-list-item,
+.footer-list-item-a {
+  padding-bottom: 0.375rem;
+}

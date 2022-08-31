@@ -710,3 +710,8 @@ summary:hover {
 .why-play-chess {
   margin-bottom: 0;
 }
+
+.footer-list-item,
+.footer-list-item-a {
+  padding-bottom: 0.375rem;
+}

@@ -584,3 +584,8 @@ hr {
     padding-inline: 1.5rem;
   }
 }
+
+.footer-list-item,
+.footer-list-item-a {
+  padding-bottom: 0.375rem;
+}
