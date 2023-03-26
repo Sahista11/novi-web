@@ -649,6 +649,10 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
   padding: 1rem 1rem 0rem 1rem;
 }
 
+.schedule-list {
+  text-align: left;
+}
+
 /* members section */
 
 .members-section {
