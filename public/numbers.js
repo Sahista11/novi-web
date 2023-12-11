@@ -21,7 +21,7 @@ document.addEventListener("scroll", function () {
 
         if (c < target) {
           counter.innerText = `${Math.ceil(c + increment)}`;
-          setTimeout(updateCounter, 30);
+          setTimeout(updateCounter, 40);
         } else {
           counter.innerText = target + "+";
         }
@@ -42,7 +42,7 @@ document.addEventListener("scroll", function () {
 
         if (b < targetBn) {
           counterBn.innerText = `${Math.ceil(b + incrementBn)}`;
-          setTimeout(updateCounterBn, 8);
+          setTimeout(updateCounterBn, 16);
         } else {
           counterBn.innerText = targetBn + "+";
         }

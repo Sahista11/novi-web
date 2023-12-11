@@ -616,7 +616,7 @@ h1,
 .club-activities-section {
   background-color: var(--bg);
   color: var(--normaltext);
-  padding-block: 1rem;
+  padding-top: 1rem;
   margin-bottom: -2px;
 }
 
@@ -646,7 +646,11 @@ main a:not(.main-button, .article-title-a, .footer-list-item-a, .media-items) {
   gap: 2rem;
   text-align: center;
   place-content: center;
-  padding: 1rem 1rem 0rem 1rem;
+  padding: 2rem;
+}
+
+.club-schedule-content li {
+  list-style: circle;
 }
 
 .schedule-list {
