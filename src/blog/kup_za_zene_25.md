@@ -1,6 +1,6 @@
 ---
 title: Šahistice ŠK Končar osvojile četvrto mjesto na Kupu Hrvatske za žene
-description: Naše šahistice nastupile su na Kupu Hrvatske za žene u Varaždinskim Toplicama i osvojile odlično četvrto mjesto unatoč slabijem dodatnom kriteriju.
+description: Naše šahistice nastupile su na Kupu Hrvatske za žene u Varaždinskim Toplicama i osvojile odlično četvrto mjesto.
 author: Luna Vukoja
 date: 2025-07-15T00:00:00.000Z
 tags:
