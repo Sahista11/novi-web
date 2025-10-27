@@ -2,10 +2,10 @@
 title: Končar pobjedom nad Svetom Nedjeljom nastavlja lov na vrh treće lige
 description: ŠK Končar svladao je ekipu ŠK Sveta Nedjelja rezultatom 4:2 i ostao u samom vrhu poretka 3.A lige centar. Dolazak Ivana Rajića donio je novu snagu i taktičku dubinu ekipi.
 author: Bruno Erenda
-date: 2024-09-14T00:00:00.000Z
+date: 2025-09-14T00:00:00.000Z
 tags:
   - post
-authorImg: /img/bruno_erenda.jpg
+authorImg: /img/erenda.jpeg
 altAuthorImg: Autor članka - Bruno Erenda
 featuredImg: /img/1000010505.webp
 altFeaturedImg: Meč Končar - Sveta Nedjelja
