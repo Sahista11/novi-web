@@ -1,5 +1,5 @@
 ---
-title: Povijesni uspjeh: Šahistice Končara izborile Prvu ligu!
+title: Šahistice Končara izborile Prvu ligu!
 description: Odličnim nastupom u Križevcima ženska ekipa Končara osvojila je drugo mjesto u 2. ligi i osigurala plasman u najviši rang hrvatskog ženskog šaha.
 author: Ruža Purkić
 date: 2025-11-20T00:00:00.000Z
