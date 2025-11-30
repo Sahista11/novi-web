@@ -23,8 +23,6 @@ Boje kluba branila je postava:
 
 Na natjecanju su nastupile tri ekipe, a igralo se kroz dva kola. U prvom kolu, odigranom 15. studenog, naše su šahistice upisale važnu pobjedu protiv ekipe **KŠK Karlovac** rezultatom **2.5 : 1.5**. U drugom kolu, odigranom dan kasnije, remizirale su protiv ekipe **ŠK Bošnjaci**.
 
-![Ekipa Končara](/img/cure_2_mjesto_inline.jpg)
-
 Ovim rezultatima naše su šahistice turnir završile na drugom mjestu. Kako je turnir bio kvalifikacijskog karaktera, ovaj plasman donio nam je ono čemu smo težili – **ulazak u Prvu hrvatsku šahovsku ligu za žene**! Ovo predstavlja značajan iskorak za ženski šah u našem klubu.
 
 Veselimo se izazovima koji nas čekaju iduće godine u najvišem rangu natjecanja. Planiramo pojačanja i nadamo se nastavku uspješnog niza. Čestitke curama na borbenosti i sjajnom rezultatu!
