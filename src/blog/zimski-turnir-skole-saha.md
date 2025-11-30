@@ -5,7 +5,6 @@ author: Bruno Pavčević
 date: 2023-12-10T00:16:47.850Z
 tags:
   - post
-  - featured
 authorImg: /img/autor_bruno.webp
 altAuthorImg: Autor članka - Bruno Pavčević
 featuredImg: /img/zimski_turnir-1.webp

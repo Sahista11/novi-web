@@ -5,7 +5,6 @@ author: Ruža Purkić
 date: 2025-10-24T00:00:00.000Z
 tags:
   - post
-  - featured
 authorImg: /img/ruza.jpg
 altAuthorImg: Autor članka - Ruža Purkić
 featuredImg: /img/IMG_20250712_113535-scaled.jpg
