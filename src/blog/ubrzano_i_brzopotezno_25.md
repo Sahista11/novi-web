@@ -1,5 +1,5 @@
 ---
-title: Uspjeh naših kadeta u Vodicama: Lovro Lisjak prvak Hrvatske!
+title: Uspjeh naših kadeta u Vodicama - Lovro Lisjak prvak Hrvatske!
 description: Naši kadeti nastupili su na prvenstvu Hrvatske u ubrzanom i brzopoteznom šahu. Lovro Lisjak osvojio je zlato i broncu, a zapažene rezultate ostvarili su i ostali mladi članovi kluba.
 author: Bruno Erenda
 date: 2025-11-23T00:00:00.000Z
