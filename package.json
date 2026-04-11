@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Sahista11/novi-web#readme",
   "dependencies": {
-    "liquidjs": "10.25.5"
+    "liquidjs": "9.43.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.5"
