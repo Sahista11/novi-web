@@ -23,7 +23,7 @@ layout: "base.njk"
                           width="48"
                           height="48"
                           draggable="false"
-                          alt=" {{ authorImgAlt }} "
+                          alt="{{ altAuthorImg }}"
                         />
                         <p>
                           Piše <span class="author-name"> {{ author }} </span>,
@@ -31,7 +31,7 @@ layout: "base.njk"
                         </p>
                     </div>
 
-                        <img loading="lazy" src=" {{ featuredImg }} " alt="{{ featuredImgAlt }}">
+                        <img loading="lazy" src="{{ featuredImg }}" alt="{{ altFeaturedImg }}">
                 
                  {{ content | safe }}
                 
