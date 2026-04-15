@@ -4,7 +4,6 @@ description: Kadeti ŠK Končar ostvarili su niz odličnih rezultata u ekipnim i
 author: Bruno Erenda
 date: 2025-08-07T00:00:00.000Z
 tags:
-  - featured
   - post
 authorImg: /img/erenda.jpeg
 altAuthorImg: Autor članka - Bruno Erenda

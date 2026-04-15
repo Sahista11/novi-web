@@ -4,7 +4,6 @@ description: Juniorska ekipa ŠK Končar ostvarila je odličan rezultat u 2. lig
 author: Bruno Erenda
 date: 2025-11-07T00:00:00.000Z
 tags:
-  - featured
   - post
 authorImg: /img/erenda.jpeg
 altAuthorImg: Autor članka - Bruno Erenda
