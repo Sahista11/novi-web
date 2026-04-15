@@ -3,6 +3,11 @@ title: 'Blog | Šah klub Končar'
 layout: 'base.njk'
 description: 'Pročitajte novosti o Šah klubu Končar i našim aktivnostima.'
 keywords: 'Šah, Zagreb, igrati šah, trenirati šah, šah klub, šahovski klub, šahovski klub Zagreb, škola šaha'
+pagination:
+  data: collections.post
+  size: 6
+  reverse: true
+  alias: posts
 ---
 
   
@@ -18,7 +23,7 @@ keywords: 'Šah, Zagreb, igrati šah, trenirati šah, šah klub, šahovski klub,
             <h1 id="blog-title" class="fs-700 ff-sans">Blog</h1>
             <hr>
           </div>
-                <!--Featured-blog-section-->
+              <!--Featured-blog-section-->
       <section
       id="featured-blog"
       class="featured-blog-section section"
@@ -27,11 +32,43 @@ keywords: 'Šah, Zagreb, igrati šah, trenirati šah, šah klub, šahovski klub,
       <div class="max-width-wrapper">
         
 
-          {%- for post in collections.post | reverse -%}
+          {%- for post in posts -%}
 
               {% include 'article-snippet.njk' %}
 
           {%- endfor -%}
+
+        <nav class="pagination-nav" aria-label="Straničenje">
+          {% if pagination.href.previous %}
+            <a href="{{ pagination.href.previous }}" class="pagination-arrow" id="pagination-prev" aria-label="Prethodna stranica">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 330 330"><path d="M315 150H51.213l49.394-49.394c5.858-5.857 5.858-15.355 0-21.213-5.857-5.857-15.355-5.857-21.213 0l-75 75c-5.858 5.857-5.858 15.355 0 21.213l75 75A14.95 14.95 0 0 0 90 255c3.839 0 7.678-1.465 10.607-4.394 5.858-5.857 5.858-15.355 0-21.213L51.213 180H315c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/></svg>
+            </a>
+          {% else %}
+            <span class="pagination-arrow pagination-arrow--disabled" aria-disabled="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 330 330"><path d="M315 150H51.213l49.394-49.394c5.858-5.857 5.858-15.355 0-21.213-5.857-5.857-15.355-5.857-21.213 0l-75 75c-5.858 5.857-5.858 15.355 0 21.213l75 75A14.95 14.95 0 0 0 90 255c3.839 0 7.678-1.465 10.607-4.394 5.858-5.857 5.858-15.355 0-21.213L51.213 180H315c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/></svg>
+            </span>
+          {% endif %}
+
+          <div class="pagination-numbers">
+            {% for href in pagination.hrefs %}
+              {% if loop.index0 == pagination.pageNumber %}
+                <span class="pagination-num pagination-num--active">{{ loop.index }}</span>
+              {% else %}
+                <a href="{{ href }}" class="pagination-num" id="pagination-page-{{ loop.index }}">{{ loop.index }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+
+          {% if pagination.href.next %}
+            <a href="{{ pagination.href.next }}" class="pagination-arrow" id="pagination-next" aria-label="Sljedeća stranica">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 330 330"><path d="M15 180h263.787l-49.394 49.394c-5.858 5.857-5.858 15.355 0 21.213C232.322 253.535 236.161 255 240 255a14.95 14.95 0 0 0 10.606-4.394l75-75c5.858-5.857 5.858-15.355 0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213 0s-5.858 15.355 0 21.213L278.787 150H15c-8.284 0-15 6.716-15 15s6.716 15 15 15z"/></svg>
+            </a>
+          {% else %}
+            <span class="pagination-arrow pagination-arrow--disabled" aria-disabled="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 330 330"><path d="M15 180h263.787l-49.394 49.394c-5.858 5.857-5.858 15.355 0 21.213C232.322 253.535 236.161 255 240 255a14.95 14.95 0 0 0 10.606-4.394l75-75c5.858-5.857 5.858-15.355 0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213 0s-5.858 15.355 0 21.213L278.787 150H15c-8.284 0-15 6.716-15 15s6.716 15 15 15z"/></svg>
+            </span>
+          {% endif %}
+        </nav>
 
       
         </div>

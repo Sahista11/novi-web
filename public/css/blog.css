@@ -91,7 +91,7 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-main a:not(.footer-list-item-a, .media-items, .main-button, .article-title-a) {
+main a:not(.footer-list-item-a, .media-items, .main-button, .article-title-a, .pagination-arrow, .pagination-num) {
   text-decoration: none;
   font-weight: 500;
   color: inherit;
@@ -707,3 +707,74 @@ h3 {
 .footer-list-item-a {
   padding-bottom: 0.5rem;
 }
+
+/* Pagination */
+
+.pagination-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 3rem 1rem 1rem;
+  flex-wrap: wrap;
+}
+
+.pagination-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  text-decoration: none;
+  background-color: var(--bg);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  fill: var(--accent);
+}
+
+.pagination-arrow:not(.pagination-arrow--disabled):hover {
+  background-color: var(--accent);
+  fill: black;
+}
+
+.pagination-arrow--disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  fill: var(--normaltext);
+  border-color: var(--normaltext);
+}
+
+.pagination-numbers {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.pagination-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  padding-inline: 0.5rem;
+  text-decoration: none;
+  font-family: var(--ff-sans-cond);
+  font-size: var(--fs-400);
+  color: var(--normaltext);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.pagination-num:not(.pagination-num--active):hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.pagination-num--active {
+  background-color: var(--accent);
+  color: black;
+  font-weight: 600;
+}
+
