@@ -1,0 +1,27 @@
+.location-notice {
+  background-color: #b2d9f0;
+  color: #121212;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0.875rem 1.25rem;
+  text-align: center;
+}
+
+.location-notice p {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.header-center .primary-header {
+  position: relative;
+}
+
+.header-center .skip-nav-link {
+  top: 0;
+  visibility: hidden;
+}
+
+.header-center .skip-nav-link:focus {
+  visibility: visible;
+}
